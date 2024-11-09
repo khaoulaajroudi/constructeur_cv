@@ -1,0 +1,147 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+  }
+  
+  .templateWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .templatePaper {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  aside {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  li div {
+    margin-left: 10px;
+    color: #555;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .language-item input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .skillTag, .languageTag, .hobbyTag {
+    background-color: #e9ecef;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .hoverTextPlus {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 24px;
+  }
+  
+  .hoverTextPlus:hover {
+    color: #0056b3;
+  }
+  
+  .add-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+  /* Styletemplate.css */
+.cv-pages {
+  max-width: 21cm; /* Largeur A4 */
+  margin: 0 auto;
+}
+
+.cv-page {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.section-container {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+/* Cache le bouton par défaut */
+.section-container .add-button {
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transition: opacity 0.3s ease;
+}
+
+/* Affiche le bouton au survol de la section */
+.section-container:hover .add-button {
+  opacity: 1;
+}
+
+/* Style pour la pagination */
+.page-break {
+  page-break-before: always;
+  height: 0;
+  margin: 0;
+  border: none;
+}
